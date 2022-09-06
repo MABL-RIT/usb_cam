@@ -8,14 +8,7 @@
     <param name="camera_frame_id" value="usb_cam" />
     <param name="io_method" value="mmap"/>
     <param name="framerate" value="10"/>
+    <!-- <param name="autofocus" value="true"/> -->
   </node>
-
-  <!--  sudo apt install ros-noetic-compressed-image-transport -->
-  <node pkg="rosbag" type="record" name="rosbag_usb_cam" args="record -o /media/mabl/storage/EXPERIMENTS/USB_CAM_BAG/ /usb_cam/camera_info /usb_cam/image_raw/compressed"/>   
-  
-  <!-- <node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">
-    <remap from="image" to="/usb_cam/image_raw"/>
-    <param name="autosize" value="true" />
-  </node> -->
 
 </launch>
